@@ -13,6 +13,8 @@ import java.util.Arrays;
 public class Ex2 {
 
     public static void main(String[] args) {
+
+        // String in_str = args[0];
         String in_str = "aalppy";
         String buf = "";
         String res = "";
