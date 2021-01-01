@@ -17,4 +17,8 @@ public class HourlyEmployee extends Employee {
         return 12*this.rate*this.factor;
     }
 
+    public HourlyEmployee createInstance(int id, String name, double rate, double factor){
+        HourlyEmployee man = new HourlyEmployee(id, name, rate, factor);
+        return man;
+    }
 }

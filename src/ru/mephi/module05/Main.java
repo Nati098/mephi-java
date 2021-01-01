@@ -34,6 +34,9 @@ public class Main {
         // hiring
         generateEmployees(company);
 
+        Employee e = new HourlyEmployee(9, "he"+9, 100+0.008*10000, 20);
+        SalariedEmployee e1 = (SalariedEmployee) e;
+
         // firing
         company.fireEmp(50);
         company.fireEmp(16);

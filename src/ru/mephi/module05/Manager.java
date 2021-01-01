@@ -21,4 +21,9 @@ public class Manager extends Employee {
         return sum;
     }
 
+    public Manager createInstance(int id, String name, double rate, double factor){
+        Manager man = new Manager(id, name, rate, factor);
+        return man;
+    }
+
 }

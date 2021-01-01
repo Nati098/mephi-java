@@ -44,4 +44,6 @@ public abstract class Employee {
     public double getRate(){
         return this.rate;
     }
+
+    public double getFactor() { return this.factor;}
 }

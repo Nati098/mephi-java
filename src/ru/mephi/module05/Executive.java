@@ -30,4 +30,9 @@ public class Executive extends Employee {
         return sum;
     }
 
+    public Executive createInstance(int id, String name, double rate, double factor){
+        Executive man = new Executive(id, name, rate, factor);
+        return man;
+    }
+
 }

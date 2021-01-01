@@ -1,6 +1,8 @@
 package ru.mephi.module05;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Lecture {
 
@@ -74,25 +76,30 @@ static class Parent{
         c.add(8);
     }
 
+    static int aaa(){
+        int x=1;
+        return x + ++x + (x = x++) +x;
+    }
+
+    static double add(double i){
+        return i + 0.5;
+    }
+
+    class A{
+        public A(int x){}
+    }
+
+    class B extends A{}
 
     public static void main(String[] args) {
-/*
-        Parent o1 = new Parent();
-        o1.sout();
-        Parent o2 = new Child();
-        o2.sout();
-        Child o3 = (Child) o2;
-        o3.sout();
-        */
 
-        ArrayList<Integer> a = new ArrayList<>();
-        a.add(1);
-        a.add(2);
+//        for (double i=6; i > 0.003; i = Math.sqrt(i)){
+//            System.out.print(i+" ");
+//        }
 
-        System.out.println(a);
+        A a = new B();
 
-        settter(a);
-        System.out.println(a);
+//        System.out.println(aaa()); // должно вывести "[0, 1, 6, 7]"
 
     }
 

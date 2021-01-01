@@ -19,4 +19,9 @@ public class SalariedEmployee extends Employee{
         // тут в любом случае ничего не поставится
         return;
     }
+
+    public SalariedEmployee createInstance(int id, String name, double rate){
+        SalariedEmployee man = new SalariedEmployee(id, name, rate);
+        return man;
+    }
 }

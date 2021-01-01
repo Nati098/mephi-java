@@ -63,6 +63,7 @@ public class Company {
                     }
 
                     entry.getValue().remove(e);
+
                     e.setRate(newParams[0]);
                     e.setFactor(newParams[1]);
                     this.empls.get(newClass).add(e);
